@@ -13,13 +13,18 @@
 <body>
     <Header>
         <div class="container">
-            <nav class="links_header">
-                <a href="#">inicio</a>
-                <a href="#sobre">sobre</a>
-                <a href="#desafio">desafios</a>
-                <a href="#endereço">endereço</a>
+            <nav id="links" class="links_header">
+                <a href="#" onclick="botaohamburguer()">inicio</a>
+                <a href="#sobre" onclick="botaohamburguer()">sobre</a>
+                <a href="#desafio" onclick="botaohamburguer()">desafios</a>
+                <a href="#endereço" onclick="botaohamburguer()">endereço</a>
+                <div class="porta" onclick="botaohamburguer()">
+                    <a href="#" class="portafechada"><i class="fas fa-door-closed"></i></a>
+                    <a href="#" class="portaaberta"><i class="fas fa-door-open"></i></a>
+                </div>
+                
             </nav>
-            <a href="#">
+            <a class="hamburguer" href="#" onclick="botaohamburguer()">
                 <i class="fas fa-bars"></i>
             </a>
         </div>
@@ -88,10 +93,26 @@
             </div>
             <img src="assets_/mapa.png" class="mapa" alt="">
         </section>
+    </main>
     <footer>
         <span>Copyright © 2020 - Escola Senai de Informática</span>
-    </footer>    
-    </main>
+    </footer>
+
+    <script>
+        function botaohamburguer() {
+
+            var menu = document.getElementById("links")
+
+            if (menu.style.display === "flex") {
+                menu.style.display = "none"
+            }
+
+            else {
+                menu.style.display = "flex"
+            }
+        }
+    </script>
+
 </body>
 
 </html>
