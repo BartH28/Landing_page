@@ -19,12 +19,12 @@
                 <a href="#desafio" onclick="botaohamburguer()">desafios</a>
                 <a href="#endereço" onclick="botaohamburguer()">endereço</a>
                 <div class="porta" onclick="botaohamburguer()">
-                    <a href="#" class="portafechada"><i class="fas fa-door-closed"></i></a>
-                    <a href="#" class="portaaberta"><i class="fas fa-door-open"></i></a>
+                    <a href="javascript:void(0)" class="portafechada"><i class="fas fa-door-closed"></i></a>
+                    <a href="javascript:void(0)" class="portaaberta"><i class="fas fa-door-open"></i></a>
                 </div>
-                
+
             </nav>
-            <a class="hamburguer" href="#" onclick="botaohamburguer()">
+            <a class="hamburguer" href="javascript:void(0)" onclick="botaohamburguer()">
                 <i class="fas fa-bars"></i>
             </a>
         </div>
@@ -102,13 +102,14 @@
         function botaohamburguer() {
 
             var menu = document.getElementById("links")
+            if (screen.width <= 420) {
+                if (menu.style.display === "flex") {
+                    menu.style.display = "none"
+                }
 
-            if (menu.style.display === "flex") {
-                menu.style.display = "none"
-            }
-
-            else {
-                menu.style.display = "flex"
+                else {
+                    menu.style.display = "flex"
+                }
             }
         }
     </script>

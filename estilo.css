@@ -299,6 +299,8 @@ footer span {
         left: 0;
         margin: unset;
         background-color: black;
+        position: fixed;
+        z-index: 99;
     }
 
     .portafechada{
@@ -342,6 +344,11 @@ footer span {
         object-fit: cover;
     }
 
+    .container_flex{
+        width: 420px;
+    }
+
+
     .logo_banner {
         top: 154px;
         left: 6%;
@@ -376,7 +383,7 @@ footer span {
     }
 
     .info_main img{
-        width: 30%;
+        width: 91%;
         height: 50%;
     
     }
@@ -384,17 +391,19 @@ footer span {
     .info_main h2{
         font-size: 44px;
         margin: 63px 68px;
+        width: 352px;
     }
 
     .conteudo_info{
         display: flex;
         margin-left: 32px;
-        width: auto;
+        width: 92%;
         flex-direction: column;
     }
 
     .participantes_info{
         margin: 54px 0;
+        width: 79%;
     }
 
     .participantes_info span{
@@ -403,7 +412,7 @@ footer span {
 
     .participantes_info h3{
         font-size: 9vw;
-        width: 80vw;
+        width: 82vw;
         margin: 25px 0
     }
 
